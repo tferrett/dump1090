@@ -67,11 +67,11 @@
 
         /* Give a border to the selected plane. */
         if (Selected == plane.hex) {
-            selhtml = 'border:1px dotted #0000aa; border-radius:10px;';
+            selhtml = 'border:1px dotted #0000aa; border-radius:20px;height: 200%; width: 200%; background-color: green; font-size:40px';
         } else {
             selhtml = '';
         }
-        he = '<div style="transform: rotate(-'+rotation+'deg); '+selhtml+'">✈️</div>';
+        he = '<div style="transform: rotate(-'+rotation+'deg); border:1px dotted #0000aa; border-radius:20px;background-color: red; height: 200%; width: 200%; font-size:32px '+selhtml+'">✈️</div>';
         var icon = L.divIcon({html: he, className: 'plane-icon'});
         return icon;
     }
